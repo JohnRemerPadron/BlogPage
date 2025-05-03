@@ -62,7 +62,7 @@ body {
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 350px) {
-  .row, .navbar, .fakeimg{   
+  .row, .navbar{   
     flex-direction: column;
   }
 }
@@ -151,18 +151,18 @@ body {
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row, .navbar {   
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
 
     @media (max-width: 350px) {
-     .sections, .section, .farright, .main, .fakeimg {
-        flex-direction: column;
+     .sections, .section, .farright, .main {
+        flex-direction: row;
         align-items: center;
       }
 		@media screen and (max-width: 350px) {
-   .navbar, .main, .fakeimg {   
+   .navbar, .main {   
   align-items: center;
 	   text-align: center;
 	   
@@ -172,7 +172,7 @@ body {
 @media screen and (max-width: 350px) {
 	.gallery, .gallery-items, .item, .farright, .sections, .section, .main 
 	{ 
-    flex-direction: column;
+    flex-direction: row;
 		align-items: center;
 		  top: 20px;
       right: 20px;
@@ -269,11 +269,18 @@ body {
 
 /* Fake image, just for this example */
 .fakeimg {
-  background-color: #aaa;
-  width: 0%;
-  padding:0px;
-	align-content: center;
+  align-content: center;
+	box-sizing: border-box;
+	 width: 50%;
+  padding: 10px 10px;
+  margin: 10px 0;
+  display: inline-block;
+  border-radius: 10px;
+	flex: auto; 
+  flex-wrap: wrap;
 }
+
+
 
 /* Footer */
 .footer {
@@ -284,8 +291,8 @@ body {
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 350px) {
-  .row, .navbar, .fakeimg{   
-    flex-direction: column;
+  .row, .navbar{   
+    flex-direction: row;
   }
 }
 
@@ -462,12 +469,12 @@ input[type=submit]:hover {
 	  src: url(href="https://johnremerpadron.github.io/BlogPage/");
     }
     @media (max-width: 350px) {
-     .sections, .section, .farright, .main, .fakeimg {
-        flex-direction: column;
+     .sections, .section, .farright, .main{
+        flex-direction: row;
         align-items: center;
       }
 		@media screen and (max-width: 350px) {
-   .navbar, .main, .fakeimg {   
+   .navbar, .main {   
   align-items: center;
 	   text-align: center;
 	   
@@ -475,8 +482,8 @@ input[type=submit]:hover {
 }
 		/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 350px) {
-	.gallery, .gallery-items, .item, .farright, .sections, .section, .main, .fakeimg{ 
-    flex-direction: column;
+	.gallery, .gallery-items, .item, .farright, .sections, .section, .main{ 
+    flex-direction: row;
 		align-items: center;
 		  top: 20px;
       right: 20px;
