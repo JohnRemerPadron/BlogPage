@@ -61,8 +61,8 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row, .navbar {   
+@media screen and (max-width: 350px) {
+  .row, .navbar, .fakeimg{   
     flex-direction: column;
   }
 }
@@ -156,20 +156,20 @@ body {
 }
 
 
-    @media (max-width: 700px) {
-     .sections, .section, .farright, .main {
+    @media (max-width: 350px) {
+     .sections, .section, .farright, .main, .fakeimg {
         flex-direction: row;
         align-items: center;
       }
-		@media screen and (max-width: 700px) {
-   .navbar, .main {   
+		@media screen and (max-width: 350px) {
+   .navbar, .main, .fakeimg {   
   align-items: center;
 	   text-align: center;
 	   
   }
 }
 		/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 350px) {
 	.gallery, .gallery-items, .item, .farright, .sections, .section, .main 
 	{ 
     flex-direction: row;
@@ -283,8 +283,8 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row, .navbar {   
+@media screen and (max-width: 350px) {
+  .row, .navbar, .fakeimg{   
     flex-direction: row;
   }
 }
@@ -461,21 +461,21 @@ input[type=submit]:hover {
       cursor: pointer;
 	  src: url(href="https://johnremerpadron.github.io/BlogPage/");
     }
-    @media (max-width: 700px) {
-     .sections, .section, .farright, .main {
+    @media (max-width: 350px) {
+     .sections, .section, .farright, .main, .fakeimg {
         flex-direction: row;
         align-items: center;
       }
-		@media screen and (max-width: 700px) {
-   .navbar, .main {   
+		@media screen and (max-width: 350px) {
+   .navbar, .main, .fakeimg {   
   align-items: center;
 	   text-align: center;
 	   
   }
 }
 		/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-	.gallery, .gallery-items, .item, .farright, .sections, .section, .main { 
+@media screen and (max-width: 350px) {
+	.gallery, .gallery-items, .item, .farright, .sections, .section, .main, .fakeimg{ 
     flex-direction: row;
 		align-items: center;
 		  top: 20px;
